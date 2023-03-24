@@ -2,11 +2,13 @@
 import Menu from "@/components/Menu/index.vue";
 import Banner from "@/components/Banner/index.vue";
 import Footer from "@/components/Footer/index.vue";
+import Accordion from "@/components/Accordion/index.vue";
 </script>
 
 <template>
   <Menu />
   <Banner />
+  <Accordion />
   <Footer />
 </template>
 

@@ -2,12 +2,12 @@
     <div class="menu">
         <div class="logo">Logo</div>
         <div class="right">
-            <span class="active">首页</span>
-            <span>关键技术</span>
-            <span>应用场景</span>
-            <span>应用价值</span>
-            <span>解决方案</span>
-            <span>关于我们</span>
+            <a class="active" href="#">首页</a>
+            <a href="#">关键技术</a>
+            <a href="#">应用场景</a>
+            <a href="#">应用价值</a>
+            <a href="#">解决方案</a>
+            <a href="#footer">关于我们</a>
         </div>
     </div>
 </template>
