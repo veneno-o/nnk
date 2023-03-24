@@ -1,0 +1,143 @@
+footer {
+    width: 100vw;
+    height: 573px;
+    background: #0A0A0A;
+}
+
+.top {
+    height: 473px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top .logo {
+    width: 140px;
+    height: 38px;
+    margin-left: 241px;
+    margin-top: 94px;
+    background: red;
+}
+
+.top .text {
+    margin-left: 174px;
+    margin-top: 79px;
+    flex-grow: 1;
+    display: flex;
+}
+
+.top .text .left {
+    width: 80px;
+    height: 52px;
+    font-size: 20px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 52px;
+}
+
+.top .text .left .ul {
+    width: 100%;
+    height: 204px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    margin-top: 16px;
+}
+
+.top .text .left .ul a {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #969CAF;
+    line-height: 34px;
+    height: 34px;
+    display: block;
+}
+
+.top .text .right {
+    margin-left: 109px;
+    width: 155px;
+}
+
+.top .text .right .title {
+    width: 80px;
+    height: 52px;
+    font-size: 20px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 52px;
+}
+
+.top .text .right .ul {
+    margin-top: 24px;
+    width: 339px;
+}
+
+.top .text .right .ul p{
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #969CAF;
+    line-height: 34px;
+    margin: 0;
+}
+
+.top .weixin {
+    margin-top: 132px;
+    margin-right: 243px;
+    width: 454px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top .weixin .left-weixin {
+    text-align: center;
+    width: 212px;
+    height: 234px;
+    background: #1C1E26;
+    border-radius: 2px;
+    opacity: 0.4;
+}
+
+.top .weixin .right-weixin {
+    text-align: center;
+    width: 212px;
+    height: 234px;
+    background: #1C1E26;
+    border-radius: 2px;
+    opacity: 0.4;
+}
+
+.top .weixin .weixin-box div {
+    width: 112px;
+    height: 112px;
+    background: red;
+    margin: 46px auto 0;
+}
+
+.top .weixin .weixin-box span {
+    display: block;
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #C6C6C6;
+    line-height: 28px;
+}
+
+.bottom {
+    border-top: 1px solid #2A2A2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.bottom .text {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #969CAF;
+}
