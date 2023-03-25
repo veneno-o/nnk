@@ -1,0 +1,42 @@
+.text-image {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-image .company1 {
+    width: 186px;
+    height: 68px;
+    font-size: 36px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 68px;
+    margin: 0;
+}
+
+.text-image .company2 {
+    width: 160px;
+    height: 68px;
+    font-size: 28px;
+    font-family: PingFangSC-Ultralight, PingFang SC;
+    font-weight: 200;
+    color: #FFFFFF;
+    line-height: 68px;
+}
+
+.text-image .content p {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin: 0;
+}
+
+.text-image .images {
+    width: 582px;
+    height: 580px;
+    background: red;
+}

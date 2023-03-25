@@ -11,7 +11,7 @@ const props = defineProps(["height", "width"]);
 <style scoped>
 .center {
     max-width: 1422px;
-    height: auto;
+    /* height: auto; */
     margin: 0 auto;
     overflow: hidden;
     /* background: red; */

@@ -4,6 +4,7 @@ import Banner from "@/components/Banner/index.vue";
 import Footer from "@/components/Footer/index.vue";
 import Accordion from "@/components/Accordion/index.vue";
 import Center from "@/components/Center/index.vue";
+import TextAndImage from "@/components/TextAndImage/index.vue";
 </script>
 
 <template>
@@ -13,6 +14,12 @@ import Center from "@/components/Center/index.vue";
     <Center>
       <Accordion />
     </Center>
+    <div style="backgroundColor:#000">
+      <Center>
+        <TextAndImage />
+      </Center>
+    </div>
+
     <Footer />
   </div>
 </template>
