@@ -2,7 +2,7 @@
 <template>
     <div class="text-image">
         <div style="width:100%;height: 580px;">
-            <el-row :gutter="20">
+            <el-row>
                 <el-col :span="10">
                     <h2 class="company1">新畅元科技</h2>
                     <h2 class="company2">NNKOSMOS</h2>
