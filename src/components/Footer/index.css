@@ -1,21 +1,22 @@
 footer {
     width: 100vw;
-    height: 573px;
+    min-height: 573px;
     background: #0A0A0A;
 }
 
 .top {
-    height: 473px;
+    min-height: 473px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* padding-right: 243px; */
 }
 
 .top .logo {
     width: 140px;
     height: 38px;
-    margin-left: 241px;
+    /* margin-left: 241px; */
     margin-top: 94px;
     background: red;
 }
@@ -57,7 +58,7 @@ footer {
 
 .top .text .right {
     margin-left: 109px;
-    width: 155px;
+    width: 400px;
 }
 
 .top .text .right .title {
@@ -75,7 +76,7 @@ footer {
     width: 339px;
 }
 
-.top .text .right .ul p{
+.top .text .right .ul p {
     font-size: 14px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -85,11 +86,11 @@ footer {
 }
 
 .top .weixin {
-    margin-top: 132px;
-    margin-right: 243px;
+    margin: 132px auto 50px;
     width: 454px;
     display: flex;
-    justify-content: space-between;
+    flex-grow: 2;
+    justify-content: flex-start;
 }
 
 .top .weixin .left-weixin {
@@ -108,6 +109,7 @@ footer {
     background: #1C1E26;
     border-radius: 2px;
     opacity: 0.4;
+    margin-left: 20px;
 }
 
 .top .weixin .weixin-box div {
@@ -140,4 +142,22 @@ footer {
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
     color: #969CAF;
+}
+
+.left-text {
+    display: flex;
+    flex-grow: 3;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1356px) {
+    /* 1356 */
+    .left-text {
+        justify-content: center;
+    }
+
+    .top .weixin {
+        justify-content: center;
+
+    }
 }
