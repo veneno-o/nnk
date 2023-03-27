@@ -1,0 +1,59 @@
+.longimage {
+    min-height: 100vh;
+    width: 100vw;
+    /* padding: 80px 0; */
+    display: flex;
+    align-items: center;
+}
+
+.longimage .poster1,
+.poster2 {
+    width: 1313px;
+    height: 430px;
+    background: red;
+}
+
+.poster1 {
+    margin-left: auto;
+}
+
+.poster2 {
+    margin-right: auto;
+}
+
+.longimage .poster1 {
+    margin-bottom: 132px;
+}
+
+.longimage .poster1 .text-content {
+    padding: 114px 0 0 120px;
+}
+
+.longimage .poster2 .text-content {
+    padding: 87px 116px 0 0;
+    text-align: right;
+}
+
+.text-content .title1,
+.title2 {
+    font-size: 40px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 56px;
+    margin: 0;
+}
+
+.text-content .content1,
+.content2 {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin: 0;
+}
+
+.text-content .content1{
+    margin-top: 30px;
+}

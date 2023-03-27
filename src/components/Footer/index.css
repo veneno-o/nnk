@@ -86,11 +86,11 @@ footer {
 }
 
 .top .weixin {
-    margin: 132px auto 50px;
+    margin: 79px auto 50px;
     width: 454px;
     display: flex;
     flex-grow: 2;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .top .weixin .left-weixin {
@@ -147,7 +147,7 @@ footer {
 .left-text {
     display: flex;
     flex-grow: 3;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 1356px) {

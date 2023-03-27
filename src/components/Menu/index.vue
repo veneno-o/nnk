@@ -14,7 +14,6 @@
             <a href="#footer">关于我们</a>
         </div>
     </div>
-
     <!-- 当尺寸小于md时显示的居中logo -->
     <div class="center-logo">
         <div class="logo">
@@ -27,6 +26,7 @@
 </template>
 
 <script>
+import Center from "@/components/Center/index.vue";
 // import 'element-plus/theme-chalk/display.css'
 export default {
 

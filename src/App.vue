@@ -3,13 +3,35 @@ import Menu from "@/components/Menu/index.vue";
 import Banner from "@/components/Banner/index.vue";
 import Footer from "@/components/Footer/index.vue";
 import Accordion from "@/components/Accordion/index.vue";
+import Center from "@/components/Center/index.vue";
+import TextAndImage from "@/components/TextAndImage/index.vue";
+import LongImage from "@/components/LongImage/index.vue";
+import CardList from "@/components/CardList/index.vue";
+import Carousel from "@/components/Carousel/index.vue";
 </script>
 
 <template>
-  <Menu />
-  <Banner />
-  <Accordion />
-  <Footer />
+  <div class="page">
+    <Menu />
+    <Banner />
+    <Center>
+      <Accordion />
+    </Center>
+    
+    <div style="background: #0D101A;">
+      <Center>
+        <Carousel/>
+        <CardList />
+      </Center>
+    </div>
+    <LongImage />
+    <div style="backgroundColor:#000">
+      <Center>
+        <TextAndImage />
+      </Center>
+    </div>
+    <Footer />
+  </div>
 </template>
 
 <style scoped>

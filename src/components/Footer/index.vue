@@ -1,5 +1,6 @@
 <template>
     <footer>
+        <Center>
         <div class="top" id="footer">
             <div class="left-text">
                 <div style="display: flex;justify-content: flex-end;">
@@ -28,7 +29,6 @@
                 </div>
             </div>
             </div>
-            <div></div>
             <div class="weixin">
                 <div class="left-weixin weixin-box">
                     <div>二维码</div>
@@ -43,9 +43,14 @@
         <div class="bottom">
             <div class="text">浙ICP 备2022031939</div>
         </div>
+    </Center>
     </footer>
 </template>
 
 <style scoped>
-@import "index.css"
+@import "index.css";
 </style>
+
+<script setup>
+import Center from "@/components/Center/index.vue";
+</script>
