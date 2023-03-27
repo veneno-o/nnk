@@ -6,6 +6,7 @@ import Accordion from "@/components/Accordion/index.vue";
 import Center from "@/components/Center/index.vue";
 import TextAndImage from "@/components/TextAndImage/index.vue";
 import LongImage from "@/components/LongImage/index.vue";
+import CardList from "@/components/CardList/index.vue";
 </script>
 
 <template>
@@ -15,6 +16,11 @@ import LongImage from "@/components/LongImage/index.vue";
     <Center>
       <Accordion />
     </Center>
+    <div style="background: #0D101A;">
+      <Center>
+        <CardList />
+      </Center>
+    </div>
     <LongImage />
     <div style="backgroundColor:#000">
       <Center>

@@ -1,15 +1,13 @@
 <template>
-    <div>
+    <div class="carousel">
         轮播图
     </div>
 </template>
 
-<script>
-    export default {
-        
-    }
+<script setup>
+
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
