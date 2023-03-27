@@ -12,9 +12,9 @@
 
 <script setup>
 const props = defineProps(["src", "title", "content1","content2", "content3"]);
-console.log(props.src)
-console.log(props.title)
-console.log(props.contents)
+// console.log(props.src)
+// console.log(props.title)
+// console.log(props.contents)
 </script>
 
 <style scoped>

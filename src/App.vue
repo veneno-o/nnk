@@ -11,25 +11,24 @@ import Carousel from "@/components/Carousel/index.vue";
 </script>
 
 <template>
-  <div class="page">
+  <div class="page" style="background: #0D101A;">
     <Menu />
     <Banner />
     <Center>
-      <Accordion />
+      <!-- <Accordion /> -->
     </Center>
     
-    <div style="background: #0D101A;">
+    <div>
       <Center>
+        <Accordion />
         <Carousel/>
         <CardList />
       </Center>
     </div>
     <LongImage />
-    <div style="backgroundColor:#000">
       <Center>
         <TextAndImage />
       </Center>
-    </div>
     <Footer />
   </div>
 </template>
