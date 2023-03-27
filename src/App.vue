@@ -17,18 +17,18 @@ import Carousel from "@/components/Carousel/index.vue";
     <Center>
       <!-- <Accordion /> -->
     </Center>
-    
+
     <div>
       <Center>
         <Accordion />
-        <Carousel/>
+        <Carousel />
         <CardList />
       </Center>
     </div>
     <LongImage />
-      <Center>
-        <TextAndImage />
-      </Center>
+    <Center>
+      <TextAndImage />
+    </Center>
     <Footer />
   </div>
 </template>
