@@ -7,6 +7,7 @@ import Center from "@/components/Center/index.vue";
 import TextAndImage from "@/components/TextAndImage/index.vue";
 import LongImage from "@/components/LongImage/index.vue";
 import CardList from "@/components/CardList/index.vue";
+import Carousel from "@/components/Carousel/index.vue";
 </script>
 
 <template>
@@ -16,8 +17,10 @@ import CardList from "@/components/CardList/index.vue";
     <Center>
       <Accordion />
     </Center>
+    
     <div style="background: #0D101A;">
       <Center>
+        <Carousel/>
         <CardList />
       </Center>
     </div>
@@ -27,7 +30,6 @@ import CardList from "@/components/CardList/index.vue";
         <TextAndImage />
       </Center>
     </div>
-
     <Footer />
   </div>
 </template>
