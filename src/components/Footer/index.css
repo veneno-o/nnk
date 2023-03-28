@@ -9,7 +9,7 @@ footer {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* padding-right: 243px; */
 }
 
@@ -115,7 +115,7 @@ footer {
 .top .weixin .weixin-box div {
     width: 112px;
     height: 112px;
-    background: red;
+    /* background: red; */
     margin: 46px auto 0;
 }
 
@@ -149,15 +149,8 @@ footer {
     flex-grow: 3;
     justify-content: flex-start;
 }
-
 @media screen and (max-width: 1356px) {
-    /* 1356 */
     .left-text {
-        justify-content: center;
-    }
-
-    .top .weixin {
-        justify-content: center;
-
+        /* justify-content: center; */
     }
 }

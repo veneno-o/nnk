@@ -1,9 +1,9 @@
 <script setup>
 import UnitCard from "./components/UnitCard.vue";
-import src1 from "@/image/smallCard/unitCard1.png";
-import src2 from "@/image/smallCard/unitCard2.png";
-import src3 from "@/image/smallCard/unitCard3.png";
-import src4 from "@/image/smallCard/unitCard4.png";
+import src1 from "@/image/SmallCard/unitCard1.png";
+import src2 from "@/image/SmallCard/unitCard2.png";
+import src3 from "@/image/SmallCard/unitCard3.png";
+import src4 from "@/image/SmallCard/unitCard4.png";
 import TitleContent from "@/components/TitleContent/index.vue";
 </script>
 

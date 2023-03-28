@@ -12,19 +12,17 @@
                     </div>
                 </el-col>
                 <el-col :span="10" :offset="4">
-                    <div class="images" ></div>
+                    <div class="images" ><img :src="Company" alt="公司简介"></div>
                 </el-col>
             </el-row>
         </div>
     </div>
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import Company from "@/image/company.png";
 </script>
 
 <style scoped>
-@import "./index.css"
+@import "./index.css";
 </style>

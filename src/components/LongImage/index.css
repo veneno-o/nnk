@@ -10,28 +10,39 @@
 .poster2 {
     width: 1313px;
     height: 430px;
-    background: red;
+    /* background: red; */
 }
 
 .poster1 {
     margin-left: auto;
+    position: relative;
 }
 
 .poster2 {
     margin-right: auto;
+    position: relative;
 }
 
 .longimage .poster1 {
     margin-bottom: 132px;
+    /* left: 0;
+    top: 0; */
 }
 
 .longimage .poster1 .text-content {
+    /* position: absolute; */
     padding: 114px 0 0 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .longimage .poster2 .text-content {
+    position: absolute;
     padding: 87px 116px 0 0;
     text-align: right;
+    right: 0;
+    top: 0;
 }
 
 .text-content .title1,

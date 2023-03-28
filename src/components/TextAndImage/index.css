@@ -33,11 +33,13 @@
     color: #FFFFFF;
     line-height: 28px;
     margin: 0;
+    opacity: 0.8;
 }
 
 .text-image .images {
     width: 582px;
     height: 580px;
-    background: red;
+    /* background: red; */
     margin-left: auto;
 }
+/* (140+174):589 => 314:589*/
