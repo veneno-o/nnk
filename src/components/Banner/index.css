@@ -4,5 +4,21 @@
     position: relative;
     left: 0;
     top: 0;
-    background: #485B79;
+    /* background: #485B79; */
+}
+
+.asider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.pg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 }

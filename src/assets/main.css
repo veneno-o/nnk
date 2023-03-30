@@ -1,7 +1,21 @@
+html{
+  width: 100%;
+}
+
 body{
   margin: 0;
 }
 
 a{
   text-decoration: none;
+}
+
+body{
+  width: 100%;
+}
+
+#app{
+  width: 100vw;
+  height: 100vh;
+  background: #000;
 }

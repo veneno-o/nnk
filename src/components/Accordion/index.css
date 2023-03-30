@@ -1,7 +1,9 @@
 .accordion {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   padding-top: 134px;
+  padding-bottom: 243px;
   box-sizing: border-box;
 }
 
@@ -84,4 +86,10 @@
   line-height: 16px;
   display: block;
   margin-top: 19px;
+}
+
+/* 卡片相关 */
+.card-List{
+  display: flex;
+  height: 100%;
 }
