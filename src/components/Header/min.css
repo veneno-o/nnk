@@ -1,0 +1,49 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background: linear-gradient(180deg, #000000 0%, rgba(6,11,26,0) 100%);
+    z-index: 999;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 1440px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right{
+    flex: 1 1 auto;
+}
+
+.left{
+    margin-right: auto;
+    width: 340px;
+    margin-top: 21px;
+}
+
+.right{
+    margin-left: auto;
+    width: 886px;
+    display: flex;
+    justify-content: end;
+}
+
+.right a {
+    margin-left: 64px;
+    width: 48px;
+    height: 17px;
+    font-size: 12px;
+    font-family: SourceHanSansSC-Bold, SourceHanSansSC;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.right .active {
+    color: #1C60EF;
+}

@@ -21,18 +21,30 @@
                 </div>
             </el-col>
             <el-col :span="16">
-                <div style="background-color: red;height: 100%;">cardList</div>
+                <div class="card-List">
+                    <MiddleCard style="margin-right: 20px;flex-grow: 2;" />
+                    <MiddleCard style="margin-right: 20px;" />
+                    <MiddleCard />
+                </div>
             </el-col>
         </el-row>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
+import MiddleCard from "./MiddleCard/index.vue";
+
+const activeNames = ref('2')
+const handleChange = (val) => {
+  console.log(val)
+}
 // ref绑定cardList监听子元素变化
 // 参考 https://juejin.cn/post/7154704730789249038
 const a = ref()
 console.log(a)
 </script>
 
-<style scoped>@import "./index.css";</style>
+<style scoped>
+@import "./index.css";
+</style>

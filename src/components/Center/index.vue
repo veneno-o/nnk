@@ -5,15 +5,17 @@
 </template>
 
 <script setup>
-const props = defineProps(["height", "width"]);
+// const props = defineProps(["height", "width"]);
 </script>
 
 <style scoped>
 .center {
-    max-width: 1422px;
+    max-width: 1440px;
     /* height: auto; */
     margin: 0 auto;
     overflow: hidden;
     /* background: red; */
+    /* padding: 0 40px; */
+    box-sizing: border-box;
 }
 </style>
