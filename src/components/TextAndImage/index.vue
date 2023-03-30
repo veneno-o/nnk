@@ -1,6 +1,6 @@
 <!-- 图文混排 -->
 <template>
-    <div class="text-image">
+    <div class="text-image" id="about">
         <div style="width:100%;height: 580px;">
             <el-row>
                 <el-col :span="10">

@@ -5,35 +5,33 @@
                 width: widthRef1,
                 height: heightRef1
             }">
-                <video-background 
-                :loop="false"
-                :src="LefeMp4" 
-                style="width:100%;height: 100%;"
-                @playing="playing"
-                @ended="end1" />
+                <video-background :loop="false" :src="LefeMp4" style="width:100%;height: 100%;" @playing="playing"
+                    @ended="end1" />
             </div>
             <div class="right-video" :style="{
                 width: widthRef2,
                 height: heightRef2
             }">
-                <video-background 
-                :loop="false"
-                :autoplay="false"
-                ref="videobackground" 
-                :src="RightMp4" 
-                style="width:100%;height: 100%;" 
-                @ended="end2" />
+                <video-background :loop="false" :autoplay="false" ref="videobackground" :src="RightMp4"
+                    style="width:100%;height: 100%;" @ended="end2" />
             </div>
         </div>
         <div class="pg" v-show="state">
-            <video-background 
-            ref="Lastvideobackground" 
-            :src="LastMp4" 
-            style="width:100%;height: 100%;" 
-            @ended="end2"
-            />
+            <video-background ref="Lastvideobackground" :src="LastMp4" style="width:100%;height: 100%;" @ended="end2" />
         </div>
-        <div class="text" ref="text"></div>
+        <div class="mask"></div>
+        <div class="text" ref="text">
+            <p class="company">新畅元NNKOSMOS</p>
+            <h1 class="title">助力全场景AI+数字生命产业应用</h1>
+            <p class="sub-title">基于AGI+数字生命融合发展，为企业打造安全、可靠的数字智能产业生态圈</p>
+            <div class="bottom-text">
+                <span>数字人定制</span>
+                <div class="dot"></div>
+                <span>直播互动营销</span>
+                <div class="dot"></div>
+                <span>AI短视频创作</span>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -47,7 +45,7 @@ import LastMp4 from "../../assets/movie/eye.mp4";
 const docHeight = document.body.clientHeight;
 const docWidth = document.body.clientWidth;
 
-const height1 = docHeight  * (1006 / 1125);
+const height1 = docHeight * (1006 / 1125);
 const width1 = height1 * 0.72;
 
 const height2 = docHeight;
@@ -63,7 +61,7 @@ const state = ref(false);
 const videobackground = ref(null);
 const Lastvideobackground = ref(null);
 
-onMounted(()=>{
+onMounted(() => {
     // console.log("dom",videobackground.value);
     // console.log("text",text.value);
 })
@@ -86,7 +84,7 @@ function playing() {
     }, 1000);
 }
 </script>
-
+ 
 <style scoped>
 @import "./index.css";
 </style>

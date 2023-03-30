@@ -1,5 +1,5 @@
-.banner{
-    width: 100vw;
+.banner {
+    width: 100%;
     height: 100vh;
     position: relative;
     left: 0;
@@ -7,10 +7,7 @@
     /* background: #485B79; */
 }
 
-.asider{
-    position: absolute;
-    top: 0;
-    left: 0;
+.asider {
     width: 100%;
     height: 100%;
     display: flex;
@@ -18,10 +15,94 @@
     align-items: end;
 }
 
-.pg{
+.pg {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.7;
+    z-index: 999;
+}
+
+.text {
+    width: 900px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    /* text-align: center; */
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.company {
+    height: 36px;
+    line-height: 36px;
+    font-size: 25px;
+    font-family: PingFangSC-Thin, PingFang SC;
+    font-weight: 100;
+    color: #FFFFFF;
+    letter-spacing: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.title {
+    /* width: 900px; */
+    height: 77px;
+    line-height: 77px;
+    font-size: 60px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+    padding-bottom: 5px;
+}
+
+.sub-title {
+    /* width: 935px; */
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC-Light, PingFang SC;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 25px;
+    letter-spacing: 8px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 535px;
+    margin: 81px auto 0;
+}
+
+.bottom-text span {
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 28px;
+    height: 28px;
 }

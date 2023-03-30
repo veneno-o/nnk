@@ -4,7 +4,7 @@ import CarouselItem from "./components/CarouselItem.vue"
 </script>
 
 <template>
-    <div class="carousel">
+    <div class="carousel" id="scenes">
         <TitleContent title="全场景数字人形象" content="虚拟助手、营销互动、IP形象孵化、情感陪伴" />
         <div class="carousel-content">
             <el-row :gutter="20">

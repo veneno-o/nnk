@@ -1,5 +1,5 @@
 <template>
-    <div class="accordion">
+    <div class="accordion" id="technology">
         <el-row :gutter="20">
             <el-col :span="8">
                 <h2 class="title">3D数字人 领先技术</h2>

@@ -1,7 +1,7 @@
 <template>
     <footer>
         <Center>
-            <div class="top" id="footer">
+            <div class="top">
                 <div class="left-text">
                     <div style="display: flex;justify-content: flex-end;">
                         <div class="logo">Logo</div>

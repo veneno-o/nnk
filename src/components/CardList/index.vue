@@ -8,7 +8,7 @@ import TitleContent from "@/components/TitleContent/index.vue";
 </script>
 
 <template>
-    <div class="cardlist">
+    <div class="cardlist" id="worth">
         <!-- 标题以及内容 -->
         <TitleContent
             title="赋能企业降本增效"

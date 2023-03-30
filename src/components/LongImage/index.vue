@@ -1,5 +1,5 @@
 <template>
-    <div class="longimage">
+    <div class="longimage" id="plan">
         <div style="width:100vw;">
             <div class="poster1" :style="style1">
                 <img :src="LongImage1" alt="TS数字人" style="width: 100%;height: 100%;">
