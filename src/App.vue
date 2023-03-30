@@ -15,7 +15,7 @@ import Carousel from "./components/Carousel/index.vue";
     <Header />
     <Banner />
 
-    <!-- <Center>
+    <Center>
       <Accordion />
       <Carousel />
       <CardList />
@@ -27,7 +27,7 @@ import Carousel from "./components/Carousel/index.vue";
       <TextAndImage />
     </Center>
 
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 
