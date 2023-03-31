@@ -14,6 +14,8 @@
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .left, .right{

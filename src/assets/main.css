@@ -20,3 +20,7 @@ body{
   background: #000;
   /* overflow-x: hidden; */
 }
+
+.el-row {
+  height: 100%;
+}

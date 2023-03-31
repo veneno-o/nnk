@@ -2,9 +2,23 @@
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-  padding-top: 134px;
-  padding-bottom: 243px;
+  /* padding-top: 134px;
+  padding-bottom: 243px; */
   box-sizing: border-box;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-center {
+  /* position: absolute; */
+  width: 100%;
+  height: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .accordion .title {
@@ -15,6 +29,7 @@
   font-weight: 600;
   color: #FFFFFF;
   line-height: 48px;
+  margin: 0;
 }
 
 .accordion .line {
@@ -25,7 +40,7 @@
 }
 
 .accordion .text {
-  margin-top: 181px;
+  /* margin-top: 181px; */
   width: 380px;
   height: 78px;
   font-family: PingFangSC-Regular, PingFang SC;
@@ -40,7 +55,7 @@
 }
 
 .accordion .icons {
-  margin-top: 257px;
+  /* margin-top: 257px; */
   display: flex;
   justify-content: space-between;
   align-items: self-end;
@@ -92,4 +107,10 @@
 .card-List{
   display: flex;
   height: 100%;
+}
+
+.decorate{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

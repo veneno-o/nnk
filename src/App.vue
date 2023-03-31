@@ -8,26 +8,30 @@ import TextAndImage from "./components/TextAndImage/index.vue";
 import LongImage from "./components/LongImage/index.vue";
 import CardList from "./components/CardList/index.vue";
 import Carousel from "./components/Carousel/index.vue";
+import {ref} from "vue";
+const docHieghtRef = ref(document.body.clientHeight);
+const docWidthRef = ref(document.body.clientWidth);
+
 </script>
 
 <template>
   <div class="page">
     <Header />
-    <Banner />
+    <Banner ref="viewHieghtRef" />
 
     <Center>
-      <Accordion />
-      <Carousel />
-      <CardList />
+      <Accordion/>
+      <!-- <Carousel />
+      <CardList /> -->
     </Center>
 
-    <LongImage />
+    <!-- <LongImage />
 
     <Center>
       <TextAndImage />
     </Center>
 
-    <Footer />
+    <Footer /> -->
   </div>
 </template>
 

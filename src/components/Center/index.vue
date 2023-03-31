@@ -17,5 +17,6 @@
     /* background: red; */
     /* padding: 0 40px; */
     box-sizing: border-box;
+    padding: 0 20px;
 }
 </style>
