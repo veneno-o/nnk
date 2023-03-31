@@ -1,14 +1,18 @@
 <template>
-    <div class="carousel">
-        <h1>{{title}}</h1>
+    <div class="carousel" :style="{
+        marginTop: props.marginTop + 'px',
+        marginBottom: props.marginBottom + 'px',
+    }">
+        <h1>{{ title }}</h1>
         <p class="line"></p>
         <!-- 字母大写 -->
-        <p class="text">{{content.toUpperCase()}}</p>
+        <p class="text">{{ content.toUpperCase() }}</p>
     </div>
-</template>
+</template> 
 
 <script setup>
-const props = defineProps(["title", "content"])
+const props = defineProps(["title", "content", "marginTop", "marginBottom"])
+console.log(props.marginTop)
 </script>
 
 <style scoped>

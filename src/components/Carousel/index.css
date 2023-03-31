@@ -1,4 +1,7 @@
+
+.el-col-4{
+    height: 100%;
+}
 .carousel-content{
-    height: 813px;  
-    /* background: red; */
+    overflow: hidden;
 }

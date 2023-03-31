@@ -1,10 +1,14 @@
+.carousel{
+    overflow: hidden;
+}
+
 .carousel h1 {
     font-size: 40px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
     color: #FFFFFF;
     line-height: 56px;
-    margin: 208px 0 0 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -12,7 +16,7 @@
     width: 52px;
     height: 4px;
     background: linear-gradient(144deg, #4E85DD 0%, #00AFFF 41%, #5145FF 100%, #5145FF 100%);
-    margin: 18px auto 0;
+    margin: 16px auto 0;
 }
 
 .carousel .text {
@@ -23,6 +27,6 @@
     color: #FFFFFF;
     line-height: 28px;
     text-align: center;
-    margin: 26px auto 111px;
+    margin: 26px auto 0;
     opacity: 0.6;
 }

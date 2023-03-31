@@ -1,13 +1,14 @@
 <template>
     <div class="carousel-item">
-        轮播图
+        
     </div>
 </template>
 
 <script setup>
-
+const { srcList } = defineProps(["srcList"])
+console.log(srcList[0])
 </script>
-
+         
 <style scoped>
 @import "./CarouselItem.css";
 </style>
