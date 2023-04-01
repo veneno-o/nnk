@@ -17,17 +17,25 @@ const docWidthRef = ref(document.body.clientWidth);
 
 <template>
   <div class="page">
+    <!-- 导航栏 -->
     <Header />
+    <!-- 首页 -->
     <Banner ref="viewHieghtRef" />
+
     <Center>
+      <!-- 关键技术 -->
       <Accordion/>
+      <!-- 应用场景 -->
       <Carousel :docHieghtRef="docHieghtRef" :docWidthRef="docWidthRef" />
+      <!-- 应用价值 -->
       <CardList />
     </Center>
 
+    <!-- 解决方案 -->
     <LongImage :docWidthRef="docWidthRef" />
 
     <Center>
+    <!-- 关于我们 -->
       <TextAndImage />
     </Center>
 

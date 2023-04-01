@@ -20,12 +20,13 @@
 }
 
 .unitcard  p{
+    max-width: 313px;
     font-size: 16px;
     font-family: PingFangSC-Light, PingFang SC;
     font-weight: 300;
     color: #FFFFFF;
     line-height: 28px;
-    height: 28px;
+    min-height: 28px;
     margin: 0;
     opacity: 0.8;
 }

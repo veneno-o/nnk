@@ -4,7 +4,9 @@
             <div class="top">
                 <div class="left-text">
                     <div style="display: flex;justify-content: flex-end;">
-                        <div class="logo">Logo</div>
+                        <div class="logo">
+                            <img src="../../image/logo.png" alt="logo">
+                        </div>
                         <div class="text">
                             <div class="left">
                                 <div class="title">快捷入口</div>
