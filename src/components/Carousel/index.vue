@@ -16,12 +16,12 @@ import Scenes5_2 from "../../image/scenes/scenes5-2.png";
 import Scenes6_1 from "../../image/scenes/scenes6-1.png";
 import Scenes6_2 from "../../image/scenes/scenes6-2.png";
 
-const scenesList1 = ref([Scenes1_1,Scenes1_2,Scenes1_1]);
-const scenesList2 = ref([Scenes2_1,Scenes2_2]);
-const scenesList3 = ref([Scenes3_1,Scenes3_2]);
-const scenesList4 = ref([Scenes4_1,Scenes4_2]);
-const scenesList5 = ref([Scenes5_1,Scenes5_2]);
-const scenesList6 = ref([Scenes6_1,Scenes6_2]);
+const scenesList1 = ref([Scenes1_1,Scenes1_2,Scenes1_1,Scenes1_2]);
+const scenesList2 = ref([Scenes2_1,Scenes2_2,Scenes2_1,Scenes2_2]);
+const scenesList3 = ref([Scenes3_1,Scenes3_2,Scenes3_1,Scenes3_2]);
+const scenesList4 = ref([Scenes4_1,Scenes4_2,Scenes4_1,Scenes4_2]);
+const scenesList5 = ref([Scenes5_1,Scenes5_2,Scenes5_1,Scenes5_2]);
+const scenesList6 = ref([Scenes6_1,Scenes6_2,Scenes6_1,Scenes6_2]);
 
 const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
 </script>
@@ -37,24 +37,24 @@ const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
             }"
         >
             <el-row :gutter="20">
-                <!-- <el-col :span="4">
-                    <CarouselItem :srcList="scenesList1" />
+                <el-col :span="4">
+                    <CarouselItem :srcList="scenesList1" direction="on" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem />
+                    <CarouselItem :srcList="scenesList2" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem />
+                    <CarouselItem :srcList="scenesList3" direction="on" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem />
+                    <CarouselItem :srcList="scenesList4" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem />
+                    <CarouselItem :srcList="scenesList5" direction="on" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem />
-                </el-col> -->
+                    <CarouselItem :srcList="scenesList6" />
+                </el-col>
             </el-row>
         </div>
     </div>
