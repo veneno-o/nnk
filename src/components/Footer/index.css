@@ -56,6 +56,11 @@ footer {
     display: block;
 }
 
+.top .text .left .ul a:hover{
+    color: #fff;
+    transition: 1s;
+}
+
 .top .text .right {
     margin-left: 109px;
     width: 400px;
