@@ -41,21 +41,23 @@ const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
                     <CarouselItem :srcList="scenesList1" direction="on" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem :srcList="scenesList2" />
+                    <CarouselItem :srcList="scenesList2" direction="down" />
                 </el-col>
                 <el-col :span="4">
                     <CarouselItem :srcList="scenesList3" direction="on" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem :srcList="scenesList4" />
+                    <CarouselItem :srcList="scenesList4" direction="down" />
                 </el-col>
                 <el-col :span="4">
                     <CarouselItem :srcList="scenesList5" direction="on" />
                 </el-col>
                 <el-col :span="4">
-                    <CarouselItem :srcList="scenesList6" />
+                    <CarouselItem :srcList="scenesList6" direction="down" />
                 </el-col>
             </el-row>
+            <div class="mask mask-top"></div>
+            <div class="mask mask-bottom"></div>
         </div>
     </div>
 </template>
