@@ -4,6 +4,10 @@
 
 .unitcard .image {
     width: 100%;
+    height: 214px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
 }
 
 .unitcard h2 {

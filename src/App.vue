@@ -17,22 +17,21 @@ const docWidthRef = ref(document.body.clientWidth);
 
 <template>
   <div class="page">
-    <!-- <Header /> -->
-    <!-- <Banner ref="viewHieghtRef" /> -->
-
+    <Header />
+    <Banner ref="viewHieghtRef" />
     <Center>
-      <!-- <Accordion/> -->
+      <Accordion/>
       <Carousel :docHieghtRef="docHieghtRef" :docWidthRef="docWidthRef" />
-      <!-- <CardList /> -->
+      <CardList />
     </Center>
 
-    <!-- <LongImage />
+    <LongImage :docWidthRef="docWidthRef" />
 
     <Center>
       <TextAndImage />
     </Center>
 
-    <Footer /> -->
+    <Footer />
   </div>
 </template>
 

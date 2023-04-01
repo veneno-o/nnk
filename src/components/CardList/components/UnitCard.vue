@@ -1,7 +1,10 @@
 <template>
     <div class="unitcard">
-        <div class="image">
-            <img :src= "src" alt="孪生数字人">
+        <div class="image"
+            :style="{
+                backgroundImage:`url(${src})`
+            }"
+        >
         </div>
         <h2>{{ title }}</h2>
         <p>{{ content1 }}</p>
@@ -12,9 +15,6 @@
 
 <script setup>
 const props = defineProps(["src", "title", "content1","content2", "content3"]);
-// console.log(props.src)
-// console.log(props.title)
-// console.log(props.contents)
 </script>
 
 <style scoped>

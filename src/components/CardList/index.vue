@@ -1,16 +1,26 @@
 <script setup>
+import {ref, onMounted} from "vue";
 import UnitCard from "./components/UnitCard.vue";
 import src1 from "@/image/SmallCard/unitCard1.png";
 import src2 from "@/image/SmallCard/unitCard2.png";
 import src3 from "@/image/SmallCard/unitCard3.png";
 import src4 from "@/image/SmallCard/unitCard4.png";
 import TitleContent from "@/components/TitleContent/index.vue";
+
+const cardlistRef = ref(null);
+let viewHeight = ref(0);
+onMounted(()=>{
+    viewHeight.value = cardlistRef.value.clientHeight;
+})
+
+
 </script>
 
 <template>
-    <div class="cardlist" id="worth">
+    <div class="cardlist" id="worth" ref="cardlistRef">
         <!-- 标题以及内容 -->
         <TitleContent
+            :marginTop="viewHeight * 0.185" :marginBottom="viewHeight * 0.1"
             title="赋能企业降本增效"
             content="ENABLE ENTERPRISES TO REDUCE COSTS AND INCREASE EFFICIENCY"
         />
@@ -30,7 +40,7 @@ import TitleContent from "@/components/TitleContent/index.vue";
                 title="视频创作" 
                 content1="AIGC多模态驱动视频内容创作" 
                 content2="行业覆盖广、场景丰富、形象百变"
-                    content3="内容易修改、视频质量高、时间成本低" />
+                content3="内容易修改、视频质量高、时间成本低" />
             </el-col>
             <el-col :span="6">
                 <UnitCard 
@@ -47,7 +57,6 @@ import TitleContent from "@/components/TitleContent/index.vue";
                 content1="可24小时数字人互动直播" 
                 content2="无谓时段、时节与环境，" 
                 content3="时间利用更充分，互动营销更高效" />
-
             </el-col>
         </el-row>
     </div>
