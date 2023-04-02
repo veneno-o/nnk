@@ -32,7 +32,7 @@
                             flexGrow: growRef === 0 ? 2 : 1,
                             backgroundPosition:`center`,
                             textAlign: growRef === 0 ? 'center' :'left'
-                        }" 
+                        }"
                         class="mr20" 
                         :clickHandler="clickHandler"
                         />
