@@ -25,11 +25,20 @@ body{
   height: 100%;
 }
 
-@keyframes global{
+/* @keyframes global{
   0%{
-    /* 时间0.6,移动30px,不透明度0.3-1 */
+    
   }
   100%{
 
   }
+} */
+/* 时间0.6,移动30px,不透明度0.3-1 */
+/* 动画变化前的样式 */
+.before-move{
+  transform: translateY(30px);
+  transition-property: transform opacity;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0,0.42,0.2,0.99);
+  opacity: 0.3;
 }

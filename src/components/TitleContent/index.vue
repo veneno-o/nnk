@@ -3,16 +3,23 @@
         marginTop: props.marginTop + 'px',
         marginBottom: props.marginBottom + 'px',
     }">
-        <h1>{{ title }}</h1>
-        <p class="line"></p>
+        <TransitionCom>
+            <h1>{{ title }}</h1>
+            <p class="line"></p>
+        </TransitionCom>
         <!-- 字母大写 -->
-        <p class="text">{{ content.toUpperCase() }}</p>
+        <TransitionCom>
+            <p class="text">{{ UpperCase }}</p>
+        </TransitionCom>
     </div>
 </template> 
 
 <script setup>
-const props = defineProps(["title", "content", "marginTop", "marginBottom"])
-console.log(props.marginTop)
+import TransitionCom from "../TransitionContainer/index.vue";
+const props = defineProps(["title", "content", "marginTop", "marginBottom"]);
+const UpperCase = props.content.toUpperCase();
+
+// console.log(props.marginTop)
 </script>
 
 <style scoped>

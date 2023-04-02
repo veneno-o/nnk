@@ -3,17 +3,17 @@
         <div class="accordion-center">
             <el-row :gutter="20">
                 <el-col :span="8">
-                    <div style="width: 100%;height: 39%;">
+                    <div style="width: 100%;height: 39%;" class="before-move" ref="titleTextRef">
                         <h2 class="title">3D数字人 领先技术</h2>
                         <div class="line"></div>
                     </div>
                     <div style="width: 100%;height: 61%;" class="decorate">
-                        <div class="text">
+                        <div class="text before-move" ref="subTitleTextRef">
                             <p>Human Avatar Modelin</p>
                             <p>Monocular Realtime Full Body Motion Capture</p>
                             <p>Multimodal AI interaction</p>
                         </div>
-                        <div class="icons">
+                        <div class="icons before-move" ref="iconRef">
                             <div class="left">
                                 <div class="arrow-top"></div>
                                 <div class="arrow-bottom"></div>
@@ -68,13 +68,21 @@ import technology3 from "@/image/technology/technology3.png";
 
 import { ref, onMounted } from 'vue';
 import MiddleCard from "./MiddleCard/index.vue";
+import {lazyLoad} from "../../utils/index";
+
 const { docHieghtRef, docWidthRef } = defineProps(["docWidthRef", "docHieghtRef"]);
 const viewHieghtRef = ref(null);
 const growRef = ref(0)
 
+const titleTextRef = ref(null);
+const subTitleTextRef = ref(null);
+const iconRef = ref(null);
+
+lazyLoad(titleTextRef,subTitleTextRef,iconRef)
+
 function clickHandler(index){
     growRef.value = index;
-    console.log(growRef.value)
+    // console.log(growRef.value)
 }
 
 </script>

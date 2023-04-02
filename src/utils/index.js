@@ -5,74 +5,22 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     // 判断当前元素是否可见
     if (entry.isIntersecting) {
+      console.log("触发懒加载...")
       const dom = entry.target;
-      dom.style.marginTop = (parseInt(dom.style.marginTop) - 20) + "px";
+      // dom.style.marginTop = (parseInt(dom.style.marginTop) - 20) + "px";
+      dom.style.transform = 'translateY(0)';
+      dom.style.opacity = 1;
       // 解除观察，有几张图片就触发几次
       observer.unobserve(dom)
     }
   })
 })
 
-// 函数节流
-function throttle(func, delay) {
-  let timer = null;
-  return function () {
-    const context = this;
-    const args = arguments;
-    if (!timer) {
-      timer = setTimeout(() => {
-        func.apply(context, args);
-        timer = null;
-      }, delay);
-    }
-  };
-}
-
-// 图片懒加载
-export function lazyLoad(dom) {
+export function lazyLoad(...domRefList) {
   onMounted(()=>{
-    observer.observe(dom);
-  })
-}
-
-/**
- * 
-<!-- <script setup>
-import { ref, onMounted } from 'vue';
-const myRef = ref("");
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    // 判断当前元素是否可见
-    if (entry.isIntersecting) {
-      const dom = entry.target;
-      dom.style.marginTop = 100 + "px";
-      // 解除观察，有几张图片就触发几次
-      observer.unobserve(dom)
+    for (const domRef of domRefList) {
+      console.log("dom2", domRef.value)
+      observer.observe(domRef.value);
     }
   })
-})
-onMounted(() => {
-  observer.observe(myRef.value);
-});
-</script>
-
-<template>
-  <div class="view"></div>
-<div class="box" ref="myRef"></div>
-</template>
-
-<style>
-  .view{
-    width:100vw;
-    height:100vh;
-    background:red;
-  }
-  .box{
-    width:200px;
-    height:200px;
-    background:#000;
-    margin-top:200px;
-    transition:2s;
-  }
-</style> -->
- */
+}
