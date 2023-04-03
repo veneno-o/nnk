@@ -27,3 +27,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+- 首屏基于vue3的视频播放 ， 参考 https://github.com/avidofood/vue-responsive-video-background-player
