@@ -20,7 +20,7 @@
             <video-background ref="Lastvideobackground" :src="LastMp4" style="width:100%;height: 100%;" @ended="end2" />
         </div>
         <div class="mask"></div>
-        <div class="text" ref="text">
+        <div class="text banner-befor-show" ref="titleRef">
             <p class="company">新畅元NNKOSMOS</p>
             <h1 class="title">助力全场景AI+数字生命产业应用</h1>
             <p class="sub-title">基于AGI+数字生命融合发展，为企业打造安全、可靠的数字智能产业生态圈</p>
@@ -40,6 +40,7 @@ import { ref, onMounted } from "vue";
 import LefeMp4 from "../../assets/movie/left.mp4";
 import RightMp4 from "../../assets/movie/right.mp4";
 import LastMp4 from "../../assets/movie/eye.mp4";
+import { lazyLoad } from "../../utils";
 
 // 根据视口宽高设置dom宽高
 const docHeight = document.body.clientHeight;
@@ -61,9 +62,16 @@ const state = ref(false);
 const videobackground = ref(null);
 const Lastvideobackground = ref(null);
 
+// 懒加载效果
+const titleRef = ref(null);
+
+// lazyLoad(titleRef)
+
+
 onMounted(() => {
-    // console.log("dom",videobackground.value);
-    // console.log("text",text.value);
+    setTimeout(() => {
+        titleRef.value.style.opacity = 1;
+    }, 0);
 })
 
 function end1() {

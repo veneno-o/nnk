@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(entries => {
 export function lazyLoad(...domRefList) {
   onMounted(()=>{
     for (const domRef of domRefList) {
-      console.log("dom2", domRef.value)
+      // console.log("dom2", domRef.value)
       observer.observe(domRef.value);
     }
   })
