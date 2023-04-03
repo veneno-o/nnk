@@ -2,6 +2,7 @@
 <template>
     <div class="text-image" id="about">
         <div style="width:100%;height: 580px;">
+            <TransformContainer>
             <el-row>
                 <el-col :span="10">
                     <h2 class="company1">新畅元科技</h2>
@@ -14,13 +15,14 @@
                 <el-col :span="10" :offset="4">
                     <div class="images" ><img :src="Company" alt="公司简介"></div>
                 </el-col>
-            </el-row>
+            </el-row></TransformContainer>
         </div>
     </div>
 </template>
 
 <script setup>
 import Company from "@/image/company.png";
+import TransformContainer from "../TransitionContainer/index.vue";
 </script>
 
 <style scoped>
