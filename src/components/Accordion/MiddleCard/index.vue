@@ -1,24 +1,57 @@
 <template>
-    <div class="middle-card" @click="a" :style="{
+    <div 
+    class="middle-card before-move" 
+    ref="cardRef"
+    @click="a" 
+    :class="{
+        'card2-before-move':index === 1,
+        'card3-before-move':index === 2,
+    }"
+    :style="{
         backgroundImage: `url(${srcRef})`
     }">
-        <div class="text">
-            <h2 class="title">真人全身外观重构与推演</h2>
+        <div class="long-text"
+            :style="{
+                opacity:state === 'expand' ? '1' : '0'
+            }"
+        >
+        <TransitionContainer>
+            <h2 class="title">{{longTitle}}</h2>
+        </TransitionContainer>
+        <TransitionContainer>
             <p class="sub-title">
-                基于神经辐射场技术,开发了高逼真真人全身3D重构技术
-                支持实时驱动和交互，可全自动、精准还原和推演真人全身形态、面部微表情、服装动态褶皱、毛发毛孔和手部细节运动。</p>
+                {{ subTitleList[0] }}
+                <br>
+                {{ subTitleList[1] }}
+            </p>
+        </TransitionContainer>
+        </div>
+        <div class="short-text"
+        :style="{
+                opacity:state === 'expand' ? '0' : '1'
+            }"
+        >
+        <TransitionContainer>
+            <h2 v-for="title of shortTitle">{{title}}</h2>
+        </TransitionContainer>
         </div>
     </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-const { index, src, clickHandler } = defineProps(["index", "src", "clickHandler"]);
+import { lazyLoad } from "../../../utils";
 
+import TransitionContainer from "../../TransitionContainer/index.vue";
+
+
+const { index, src, clickHandler, state, longTitle, shortTitle, subTitleList } = defineProps(["subTitleList", "index", "src", "clickHandler", "state","longTitle","shortTitle"]);
 const srcRef = ref(src);
+const cardRef = ref(null);
+lazyLoad(cardRef);
 
 function a() {
-    console.log(index, src)
+    console.log("state", state)
     clickHandler(index)
 }
 // growRef

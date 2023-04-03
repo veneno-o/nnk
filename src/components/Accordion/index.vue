@@ -27,29 +27,43 @@
                 </el-col>
                 <el-col :span="16">
                     <div class="card-List">
-                        <MiddleCard :index="0" :src="technology1" 
+                        <MiddleCard :index="0" 
+                        :src="technology1" 
+                        :longTitle="titleList[0][0]"
+                        :shortTitle="titleList[0][1]"
+                        :subTitleList="subTitleList[0]"
+                        :state="growRef === 0 ? 'expand' : ''"
                         :style="{
                             flexGrow: growRef === 0 ? 2 : 1,
                             backgroundPosition:`center`,
-                            textAlign: growRef === 0 ? 'center' :'left'
                         }"
                         class="mr20" 
                         :clickHandler="clickHandler"
                         />
                         <MiddleCard :index="1" 
                         :src="technology2" 
+                        :longTitle="titleList[1][0]"
+                        :shortTitle="titleList[1][1]"
+                        :subTitleList="subTitleList[1]"
+                        :state="growRef === 1 ? 'expand' : ''"
                         :style="{
                             flexGrow: growRef === 1 ? 2 : 1,
-                            backgroundPosition:`left`
+                            backgroundPosition:`left`,
+                            state:growRef === 0 ? 'expand' : ''
                             }" 
                         class="mr20" 
                         :clickHandler="clickHandler"
                         />
                         <MiddleCard :index="2" 
-                        :src="technology3" 
+                        :src="technology3"
+                        :longTitle="titleList[2][0]"
+                        :shortTitle="titleList[2][1]"
+                        :subTitleList="subTitleList[2]"
+                        :state="growRef === 2 ? 'expand' : ''" 
                         :style="{
                             flexGrow: growRef === 2 ? 2 : 1,
-                            backgroundPosition:`right`
+                            backgroundPosition:`right`,
+                            state:growRef === 0 ? 'expand' : ''
                             }" 
                         growRef="growRef" 
                         :clickHandler="clickHandler"
@@ -77,6 +91,17 @@ const growRef = ref(0)
 const titleTextRef = ref(null);
 const subTitleTextRef = ref(null);
 const iconRef = ref(null);
+
+const titleList = [
+    ["真人全身外观重构与推演", ["真人全身外观", "重构与推演"]], 
+    ["极简实时单RGB全身动作捕捉",["极简实时单RGB","全身动作捕捉"]], 
+    ["多模态AI智能驱动与交互", ["多模态AI智能", "驱动与交互"]]
+];
+const subTitleList = [
+    ["基于神经辐射场技术,开发了高逼真真人全身3D重构技术", "支持实时驱动和交互，可全自动、精准还原和推演真人全身形态、面部微表情、服装动态褶皱、毛发毛孔和手部细节运动。"],
+    ["利用单相机下实时人体精细动作捕捉（面部+手势+动作）", "融合物理动力学约束，解决动捕着地偏移难题。"],
+    ["通过融合ChatGPT问答, 实现个人风格化还原的数字人互动", "还原个人形象、声音、神韵、小动作习惯等。"],
+]
 
 lazyLoad(titleTextRef,subTitleTextRef,iconRef)
 

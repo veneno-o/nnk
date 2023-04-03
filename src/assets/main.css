@@ -33,12 +33,28 @@ body{
 
   }
 } */
+
 /* 时间0.6,移动30px,不透明度0.3-1 */
 /* 动画变化前的样式 */
 .before-move{
   transform: translateY(30px);
   transition-property: transform opacity;
-  transition-duration: 0.6s;
+  transition-duration: 0.6s!important;
+  /* transition-duration: 1s!important; */
   transition-timing-function: cubic-bezier(0,0.42,0.2,0.99);
   opacity: 0.3;
+}
+
+/* 显示时间是第一个card的2倍 */
+.card2-before-move{
+  /* transition-duration: 1.2s!important; */
+  /* transition-duration: 2s!important; */
+  transition-delay: 0.1s;
+}
+
+/* 显示时间是第一个card的3倍 */
+.card3-before-move{
+  /* transition-duration: 1.8s!important; */
+  /* transition-duration: 3s!important; */
+  transition-delay: 0.2s;
 }
