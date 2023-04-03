@@ -15,10 +15,10 @@
                 opacity:state === 'expand' ? '1' : '0'
             }"
         >
-        <TransitionContainer>
+        <TransitionContainer :index="index">
             <h2 class="title">{{longTitle}}</h2>
         </TransitionContainer>
-        <TransitionContainer>
+        <TransitionContainer :index="index">
             <p class="sub-title">
                 {{ subTitleList[0] }}
                 <br>
@@ -31,7 +31,7 @@
                 opacity:state === 'expand' ? '0' : '1'
             }"
         >
-        <TransitionContainer>
+        <TransitionContainer :index="index">
             <h2 v-for="title of shortTitle">{{title}}</h2>
         </TransitionContainer>
         </div>

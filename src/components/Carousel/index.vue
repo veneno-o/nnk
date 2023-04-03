@@ -31,7 +31,7 @@ const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
     <div class="carousel" id="scenes" :style="{
         height:docHieghtRef + 'px'
     }">
-        <TitleContent :marginTop="12" :marginBottom="98" title="全场景数字人形象" content="虚拟助手、营销互动、IP形象孵化、情感陪伴" />
+        <TitleContent :marginTop="82" :marginBottom="98" title="全场景数字人形象" content="虚拟助手、营销互动、IP形象孵化、情感陪伴" />
         <TransitionContainer>
         <div class="carousel-content"
             :style="{
