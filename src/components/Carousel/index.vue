@@ -36,7 +36,7 @@ const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
         <div class="carousel-content"
             :style="{
                 height:docHieghtRef*0.72 + 'px'
-            }"
+            }" 
         >
             <el-row :gutter="20">
                 <el-col :span="4">

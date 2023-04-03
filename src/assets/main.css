@@ -25,14 +25,6 @@ body{
   height: 100%;
 }
 
-/* @keyframes global{
-  0%{
-    
-  }
-  100%{
-
-  }
-} */
 
 /* 时间0.6,移动30px,不透明度0.3-1 */
 /* 动画变化前的样式 */
@@ -57,4 +49,11 @@ body{
   /* transition-duration: 1.8s!important; */
   /* transition-duration: 3s!important; */
   transition-delay: 0.2s;
+}
+
+/* 显示时间是第一个card的4倍 */
+.card4-before-move{
+  /* transition-duration: 1.8s!important; */
+  /* transition-duration: 3s!important; */
+  transition-delay: 0.3s;
 }

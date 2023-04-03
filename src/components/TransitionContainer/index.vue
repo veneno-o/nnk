@@ -1,5 +1,13 @@
 <template>
-    <div class="transition-container before-move" ref="titleTextRef">
+    <div 
+        class="transition-container before-move"
+        :class="{
+            'card2-before-move': index === 1,
+            'card3-before-move': index === 2,
+            'card4-before-move': index === 3,
+        }"
+        ref="titleTextRef"
+        >
         <slot></slot>
     </div>
 </template>
@@ -8,6 +16,7 @@
 import {ref} from "vue";
 import {lazyLoad} from "../../utils/index";
 
+const {index} = defineProps(["index"]);
 const titleTextRef = ref(null);
 lazyLoad(titleTextRef)
 

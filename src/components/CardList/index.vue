@@ -1,6 +1,7 @@
 <script setup>
 import {ref, onMounted} from "vue";
 import UnitCard from "./components/UnitCard.vue";
+
 import src1 from "@/image/SmallCard/unitCard1.png";
 import src2 from "@/image/SmallCard/unitCard2.png";
 import src3 from "@/image/SmallCard/unitCard3.png";
@@ -9,6 +10,7 @@ import TitleContent from "@/components/TitleContent/index.vue";
 
 const cardlistRef = ref(null);
 let viewHeight = ref(0);
+
 onMounted(()=>{
     viewHeight.value = cardlistRef.value.clientHeight;
 })
@@ -29,6 +31,7 @@ onMounted(()=>{
             <el-col :span="6">
                 <UnitCard 
                 :src="src1" 
+                :index="0"
                 title="孪生数字人" 
                 content1="1分钟真人/视频驱动" 
                 content2="极速生成孪生数字人" 
@@ -37,6 +40,8 @@ onMounted(()=>{
             <el-col :span="6">
                 <UnitCard 
                 :src="src2" 
+                :index="1"
+                class="card2-before-move"
                 title="视频创作" 
                 content1="AIGC多模态驱动视频内容创作" 
                 content2="行业覆盖广、场景丰富、形象百变"
@@ -45,6 +50,8 @@ onMounted(()=>{
             <el-col :span="6">
                 <UnitCard 
                 :src="src3" 
+                :index="2"
+                class="card3-before-move"
                 title="真人驱动"
                 content1="真人驱动3D数字人互动营销" 
                 content2="无需真人出境，降低人员匹配成本" 
@@ -53,6 +60,8 @@ onMounted(()=>{
             <el-col :span="6">
                 <UnitCard 
                 :src="src4" 
+                :index="3"
+                class="card4-before-move"
                 title="直播不间断" 
                 content1="可24小时数字人互动直播" 
                 content2="无谓时段、时节与环境，" 
