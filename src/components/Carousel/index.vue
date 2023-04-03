@@ -2,6 +2,7 @@
 import {ref} from "vue";
 import TitleContent from "../../components/TitleContent/index.vue";
 import CarouselItem from "./components/CarouselItem.vue";
+import TransitionContainer from "../TransitionContainer/index.vue"
 
 import Scenes1_1 from "../../image/scenes/scenes1-1.png";
 import Scenes1_2 from "../../image/scenes/scenes1-2.png";
@@ -31,6 +32,7 @@ const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
         height:docHieghtRef + 'px'
     }">
         <TitleContent :marginTop="12" :marginBottom="98" title="全场景数字人形象" content="虚拟助手、营销互动、IP形象孵化、情感陪伴" />
+        <TransitionContainer>
         <div class="carousel-content"
             :style="{
                 height:docHieghtRef*0.72 + 'px'
@@ -59,6 +61,7 @@ const {docHieghtRef,docWidthRef} = defineProps(["docWidthRef","docHieghtRef"]);
             <div class="mask mask-top"></div>
             <div class="mask mask-bottom"></div>
         </div>
+    </TransitionContainer>
     </div>
 </template>
 
