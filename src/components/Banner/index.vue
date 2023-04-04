@@ -62,18 +62,18 @@ import LastMp4 from "../../assets/movie/eye.mp4";
 const docHeight = document.body.clientHeight;
 const docWidth = document.body.clientWidth;
 const bannerRef = ref(null);
-const viewHeightRef = ref(0);
+const viewHeightRef = ref(900);
 
-const height1 = docHeight * (1006 / 1125);
-const width1 = height1 * 0.72;
+const height1 = ref(viewHeightRef.value * (1006 / 1125));
+const width1 = ref(height1.value * 0.72);
 
-const height2 = docHeight;
-const width2 = height2 * 0.72;
+const height2 = ref(viewHeightRef.value);
+const width2 = ref(height2.value * 0.72);
 
-const heightRef1 = ref(height1 + "px");
-const widthRef1 = ref(width1 + "px");
-const heightRef2 = ref(height2 + "px");
-const widthRef2 = ref(width2 + "px");
+const heightRef1 = ref(height1.value + "px");
+const widthRef1 = ref(width1.value + "px");
+const heightRef2 = ref(height2.value + "px");
+const widthRef2 = ref(width2.value + "px");
 
 // 是否播放完成
 const state = ref(false);
