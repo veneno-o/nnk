@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     min-height: 573px;
-    background: #0A0A0A;
+    /* background: #0A0A0A; */
 }
 
 .top {
@@ -153,9 +153,4 @@ footer {
     display: flex;
     flex-grow: 3;
     justify-content: flex-start;
-}
-@media screen and (max-width: 1356px) {
-    .left-text {
-        /* justify-content: center; */
-    }
 }

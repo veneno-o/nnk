@@ -11,13 +11,18 @@ import CardList from "./components/CardList/index.vue";
 import Carousel from "./components/Carousel/index.vue";
 
 import {ref} from "vue";
+import Bg1 from "./assets/image/bg/bg1.png";
+import Bg2 from "./assets/image/bg/bg2.png";
+import Bg3 from "./assets/image/bg/bg3.png";
+
 const docHieghtRef = ref(document.body.clientHeight);
 const docWidthRef = ref(document.body.clientWidth);
-
 </script>
 
 <template>
-  <div class="page">
+  <div class="page" :style="{
+    backgroundImage:`url(${Bg1}), url(${Bg2}),url(${Bg3})`
+  }">
     <!-- 导航栏 -->
     <Header />
     <!-- 首页 -->
@@ -47,6 +52,8 @@ const docWidthRef = ref(document.body.clientWidth);
 <style scoped>
 .page{
   width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 18%, right 60% ,left 90%;
 }
 </style>
 
