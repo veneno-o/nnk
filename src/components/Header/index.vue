@@ -21,7 +21,7 @@
 <script setup>
 import {ref} from "vue";
 import Center from "../Center/index.vue";
-import Logo from "../../image/logo.png";
+import Logo from "@/assets/image/logo.png";
 // import 'element-plus/theme-chalk/display.css';
 
 const index = ref(0);

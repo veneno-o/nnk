@@ -1,23 +1,40 @@
 <template>
-    <div class="banner">
+    <div class="banner" ref="bannerRef">
         <div class="asider" v-show="!state">
             <div class="left-video" :style="{
                 width: widthRef1,
-                height: heightRef1
+                height: heightRef1,
             }">
-                <video-background :loop="false" :src="LefeMp4" style="width:100%;height: 100%;" @playing="playing"
-                    @ended="end1" />
+                <video 
+                    :src="LefeMp4" 
+                    :height="height1"
+                    @canplaythrough="canplaythrough"
+                    @ended="ended1"
+                    ref="videoRef1"
+                    muted="true"
+                ></video>
             </div>
             <div class="right-video" :style="{
                 width: widthRef2,
-                height: heightRef2
+                height: heightRef2,
             }">
-                <video-background :loop="false" :autoplay="false" ref="videobackground" :src="RightMp4"
-                    style="width:100%;height: 100%;" @ended="end2" />
+                <video 
+                    :src="RightMp4" 
+                    :height="height2"
+                    @ended="ended2"
+                    ref="videoRef2"
+                    muted="true"
+                ></video>
             </div>
         </div>
         <div class="pg" v-show="state">
-            <video-background ref="Lastvideobackground" :src="LastMp4" style="width:100%;height: 100%;" @ended="end2" />
+            <video 
+                :src="LastMp4" 
+                :width="docWidth"
+                ref="videoRef3"
+                @ended="ended3"
+                muted="true"
+            ></video>
         </div>
         <div class="mask"></div>
         <div class="text banner-befor-show" ref="titleRef">
@@ -40,11 +57,12 @@ import { ref, onMounted } from "vue";
 import LefeMp4 from "../../assets/movie/left.mp4";
 import RightMp4 from "../../assets/movie/right.mp4";
 import LastMp4 from "../../assets/movie/eye.mp4";
-import { lazyLoad } from "../../utils";
 
 // 根据视口宽高设置dom宽高
 const docHeight = document.body.clientHeight;
 const docWidth = document.body.clientWidth;
+const bannerRef = ref(null);
+const viewHeightRef = ref(0);
 
 const height1 = docHeight * (1006 / 1125);
 const width1 = height1 * 0.72;
@@ -59,8 +77,9 @@ const widthRef2 = ref(width2 + "px");
 
 // 是否播放完成
 const state = ref(false);
-const videobackground = ref(null);
-const Lastvideobackground = ref(null);
+const videoRef1 = ref(null);
+const videoRef2 = ref(null);
+const videoRef3 = ref(null);
 
 // 懒加载效果
 const titleRef = ref(null);
@@ -69,27 +88,36 @@ const titleRef = ref(null);
 
 
 onMounted(() => {
+    viewHeightRef.value = bannerRef.value.clientHeight;
     setTimeout(() => {
         titleRef.value.style.opacity = 1;
     }, 0);
 })
 
-function end1() {
-    console.log("end")
+function canplaythrough(){
+    console.log("canplaythrough");
+    videoRef1.value.play();
+    setTimeout(()=>{
+        videoRef2.value.play();      
+    },1000)
+}
+function ended1(){
+    console.log("ended1")
 }
 // 第二屏视频播放完成，播放第三屏
-function end2() {
-    Lastvideobackground.value.player.play();
+function ended2(){
     state.value = true;
+    videoRef3.value.play();
+    console.log("ended2")
 }
 
-
-// 第一屏视频播放完后1s，第二屏视频开始播放
-function playing() {
-    setTimeout(() => {
-        videobackground.value.player.play();
-        // console.log(videobackground.value.player.play())
-    }, 1000);
+function ended3(){
+    state.value = false;
+    videoRef1.value.play();
+    setTimeout(()=>{
+        videoRef2.value.play();      
+    },1000)
+    console.log("ended3")
 }
 </script>
  

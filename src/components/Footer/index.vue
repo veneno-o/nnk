@@ -5,7 +5,7 @@
                 <div class="left-text">
                     <div style="display: flex;justify-content: flex-end;">
                         <div class="logo">
-                            <img src="../../image/logo.png" alt="logo">
+                            <img src="../../assets/image/logo.png" alt="logo">
                         </div>
                         <div class="text">
                             <div class="left">
@@ -55,6 +55,6 @@
 
 <script setup>
 import Center from "@/components/Center/index.vue";
-import WeChat1 from "@/image/WeChat/WeChat1.png";
-import WeChat2 from "@/image/WeChat/WeChat2.png";
+import WeChat1 from "@/assets/image/WeChat/WeChat1.png";
+import WeChat2 from "@/assets/image/WeChat/WeChat2.png";
 </script>

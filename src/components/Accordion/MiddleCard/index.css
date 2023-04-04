@@ -17,7 +17,6 @@ h2 {
     flex: 1 1 auto;
     transition-duration: 2s;
     overflow: hidden;
-    /* background-image: url(../../../image/technology/technology1.png); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;

@@ -76,9 +76,9 @@
 </template>
 
 <script setup>
-import technology1 from "@/image/technology/technology1.png";
-import technology2 from "@/image/technology/technology2.png";
-import technology3 from "@/image/technology/technology3.png";
+import technology1 from "../../assets/image/technology/technology1.png";
+import technology2 from "../../assets/image/technology/technology2.png";
+import technology3 from "../../assets/image/technology/technology3.png";
 
 import { ref, onMounted } from 'vue';
 import MiddleCard from "./MiddleCard/index.vue";
