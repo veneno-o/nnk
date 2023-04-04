@@ -29,6 +29,7 @@
         </div>
         <div class="pg" v-show="state">
             <video 
+                class="big-pg"
                 :src="LastMp4" 
                 :width="docWidth"
                 ref="videoRef3"
