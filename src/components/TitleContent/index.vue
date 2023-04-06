@@ -19,7 +19,6 @@ import TransitionCom from "../TransitionContainer/index.vue";
 const props = defineProps(["title", "content", "marginTop", "marginBottom"]);
 const UpperCase = props.content.toUpperCase();
 
-// console.log(props.marginTop)
 </script>
 
 <style scoped>

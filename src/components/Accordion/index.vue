@@ -107,7 +107,6 @@ lazyLoad(titleTextRef,subTitleTextRef,iconRef)
 
 function clickHandler(index){
     growRef.value = index;
-    // console.log(growRef.value)
 }
 
 </script>

@@ -25,7 +25,7 @@ const docWidthRef = ref(document.body.clientWidth);
   }">
     <!-- 导航栏 -->
     <Header />
-    <!-- 首页 -->
+    <!-- Banner -->
     <Banner ref="viewHieghtRef" />
 
     <Center>

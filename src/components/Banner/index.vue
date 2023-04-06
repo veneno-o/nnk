@@ -10,7 +10,7 @@
                     :height="height1"
                     @canplaythrough="canplaythrough"
                     @ended="ended1"
-                    ref="videoRef1"
+                    ref="videoRef1" 
                     muted="true"
                 ></video>
             </div>
