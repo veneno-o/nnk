@@ -31,6 +31,7 @@
                         <h2 class="title2">真人驱动直播平台</h2>
                         <p class="content1">真人驱动数字形象与行为动作</p>
                         <p class="content2">可24小时不间断数字人互动营销</p>
+                        <p class="content3">五倍降本，双倍提效</p>
                     </div>
                 </div>
             </TransformContainer>
