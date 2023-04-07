@@ -48,7 +48,7 @@
                         :state="growRef === 1 ? 'expand' : ''"
                         :style="{
                             flexGrow: growRef === 1 ? 2 : 1,
-                            backgroundPosition:`left`,
+                            backgroundPosition:`16% center`,
                             state:growRef === 0 ? 'expand' : ''
                             }" 
                         class="mr20" 
@@ -62,7 +62,7 @@
                         :state="growRef === 2 ? 'expand' : ''" 
                         :style="{
                             flexGrow: growRef === 2 ? 2 : 1,
-                            backgroundPosition:`right`,
+                            backgroundPosition:`80% center`,
                             state:growRef === 0 ? 'expand' : ''
                             }" 
                         growRef="growRef" 

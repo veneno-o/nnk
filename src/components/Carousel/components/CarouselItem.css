@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     animation-name: caseStyle;
-    animation-duration: 100s;
+    animation-duration: 60s;
     animation-timing-function: linear;
     animation-direction: normal;
     animation-iteration-count: infinite;

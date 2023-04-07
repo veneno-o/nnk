@@ -102,18 +102,20 @@ footer {
     text-align: center;
     width: 212px;
     height: 234px;
-    background: #1C1E26;
+    /* background: #1C1E26; */
+    background: rgba(28,30,38,0.4);
     border-radius: 2px;
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 
 .top .weixin .right-weixin {
     text-align: center;
     width: 212px;
     height: 234px;
-    background: #1C1E26;
+    /* background: #1C1E26; */
+    background: rgba(28,30,38,0.4);
     border-radius: 2px;
-    opacity: 0.4;
+    /* opacity: 0.4; */
     margin-left: 20px;
 }
 

@@ -64,7 +64,7 @@ onMounted(()=>{
                 class="card4-before-move"
                 title="直播不间断" 
                 content1="可24小时数字人互动直播" 
-                content2="无谓时段、时节与环境，" 
+                content2="无谓时段、时节与环境" 
                 content3="时间利用更充分，互动营销更高效" />
             </el-col>
         </el-row>

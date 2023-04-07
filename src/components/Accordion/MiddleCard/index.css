@@ -37,7 +37,7 @@ h2 {
     /* text-align: left; */
     padding: 0 28px;
     box-sizing: border-box;
-    transition: 2s;
+    transition: .1s;
 }
 
 .short-text {
@@ -48,7 +48,7 @@ h2 {
     /* text-align: left; */
     padding: 0 28px;
     box-sizing: border-box;
-    transition: 2s;
+    transition: .1s;
     text-align: center;
     /* opacity: 0; */
 }

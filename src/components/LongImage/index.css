@@ -30,19 +30,20 @@
 }
 
 .longimage .poster1 .text-content {
-    /* position: absolute; */
-    padding: 114px 0 0 120px;
+    padding-left: 120px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .longimage .poster2 .text-content {
     position: absolute;
-    padding: 87px 116px 0 0;
+    padding-right: 87px;
     text-align: right;
     right: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .text-content .title1,
