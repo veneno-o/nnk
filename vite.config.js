@@ -14,13 +14,19 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  devServer: {
-    disableHostCheck:true,
-      // disableHostCheck: true,
-      port: 443,
-      https: {
-          key: fs.readFileSync(path.join(__dirname, 'src/ssl/nnkosmos.com_nginx/nnkosmos.com.key')),
-          cert: fs.readFileSync(path.join(__dirname, 'src/ssl/nnkosmos.com_nginx/nnkosmos.com_bundle.crt'))
-      }
+  // devServer: {
+  //   disableHostCheck:true,
+  //     // disableHostCheck: true,
+  //     port: 443,
+  //     https: {
+  //         key: fs.readFileSync(path.join(__dirname, 'src/ssl/nnkosmos.com_nginx/nnkosmos.com.key')),
+  //         cert: fs.readFileSync(path.join(__dirname, 'src/ssl/nnkosmos.com_nginx/nnkosmos.com_bundle.crt'))
+  //     }
+  // }
+  server:{
+    https:{
+      key: fs.readFileSync(path.join(__dirname, 'src/ssl/nnkosmos.com_nginx/nnkosmos.com.key')),
+      cert: fs.readFileSync(path.join(__dirname, 'src/ssl/nnkosmos.com_nginx/nnkosmos.com_bundle.crt'))
+    }
   }
 })
