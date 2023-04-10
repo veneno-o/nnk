@@ -1,3 +1,11 @@
+<script setup>
+import Center from "@/components/Center/index.vue";
+import WeChat1 from "@/assets/image/footer/WeChat1.png";
+import WeChat2 from "@/assets/image/footer/WeChat2.png";
+import Logo from "@/assets/image/footer/logo.png";
+import Arrow from "@/assets/image/footer/arrow.png";
+</script>
+
 <template>
     <footer>
         <Center>
@@ -5,7 +13,9 @@
                 <div class="left-text">
                     <div style="display: flex;justify-content: flex-end;">
                         <div class="logo">
-                            <img src="../../assets/image/logo.png" alt="logo">
+                            <div>
+                            <img :src="Logo" alt="logo"></div>
+                            <div><img :src="Arrow" alt="icon"></div>
                         </div>
                         <div class="text">
                             <div class="left">
@@ -52,9 +62,3 @@
 <style scoped>
 @import "index.css";
 </style>
-
-<script setup>
-import Center from "@/components/Center/index.vue";
-import WeChat1 from "@/assets/image/WeChat/WeChat1.png";
-import WeChat2 from "@/assets/image/WeChat/WeChat2.png";
-</script>

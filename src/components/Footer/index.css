@@ -14,11 +14,15 @@ footer {
 }
 
 .top .logo {
-    width: 140px;
-    height: 38px;
+    width: 170px;
+    box-sizing: border-box;
+    height: 344px;
     /* margin-left: 241px; */
-    margin-top: 94px;
-    /* background: red; */
+    padding-top: 94px;
+    /* background: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top .text {
