@@ -2,10 +2,10 @@
 import {ref, onMounted} from "vue";
 import UnitCard from "./components/UnitCard.vue";
 
-import src1 from "@/assets/image/SmallCard/unitCard1.png";
-import src2 from "@/assets/image/SmallCard/unitCard2.png";
-import src3 from "@/assets/image/SmallCard/unitCard3.png";
-import src4 from "@/assets/image/SmallCard/unitCard4.png";
+import src1 from "../../assets/image/smallCard/unitCard1.png";
+import src2 from "../../assets/image/smallCard/unitCard2.png";
+import src3 from "../../assets/image/smallCard/unitCard3.png";
+import src4 from "../../assets/image/smallCard/unitCard4.png";
 import TitleContent from "@/components/TitleContent/index.vue";
 
 const cardlistRef = ref(null);

@@ -4,18 +4,18 @@ import TitleContent from "../../components/TitleContent/index.vue";
 import CarouselItem from "./components/CarouselItem.vue";
 import TransitionContainer from "../TransitionContainer/index.vue"
 
-import Scenes1_1 from "@/assets/image/scenes/scenes1-1.png";
-import Scenes1_2 from "@/assets/image/scenes/scenes1-2.png";
-import Scenes2_1 from "@/assets/image/scenes/scenes2-1.png";
-import Scenes2_2 from "@/assets/image/scenes/scenes2-2.png";
-import Scenes3_1 from "@/assets/image/scenes/scenes3-1.png";
-import Scenes3_2 from "@/assets/image/scenes/scenes3-2.png";
-import Scenes4_1 from "@/assets/image/scenes/scenes4-1.png";
-import Scenes4_2 from "@/assets/image/scenes/scenes4-2.png";
-import Scenes5_1 from "@/assets/image/scenes/scenes5-1.png";
-import Scenes5_2 from "@/assets/image/scenes/scenes5-2.png";
-import Scenes6_1 from "@/assets/image/scenes/scenes6-1.png";
-import Scenes6_2 from "@/assets/image/scenes/scenes6-2.png";
+import Scenes1_1 from "../../assets/image/scenes/scenes1-1.png";
+import Scenes1_2 from "../../assets/image/scenes/scenes1-2.png";
+import Scenes2_1 from "../../assets/image/scenes/scenes2-1.png";
+import Scenes2_2 from "../../assets/image/scenes/scenes2-2.png";
+import Scenes3_1 from "../../assets/image/scenes/scenes3-1.png";
+import Scenes3_2 from "../../assets/image/scenes/scenes3-2.png";
+import Scenes4_1 from "../../assets/image/scenes/scenes4-1.png";
+import Scenes4_2 from "../../assets/image/scenes/scenes4-2.png";
+import Scenes5_1 from "../../assets/image/scenes/scenes5-1.png";
+import Scenes5_2 from "../../assets/image/scenes/scenes5-2.png";
+import Scenes6_1 from "../../assets/image/scenes/scenes6-1.png";
+import Scenes6_2 from "../../assets/image/scenes/scenes6-2.png";
 
 const scenesList1 = ref([Scenes1_1,Scenes1_2,Scenes1_1,Scenes1_2]);
 const scenesList2 = ref([Scenes2_1,Scenes2_2,Scenes2_1,Scenes2_2]);

@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import Company from "@/assets/image/company.png";
+import Company from "../../assets/image/company.png";
 import TransformContainer from "../TransitionContainer/index.vue";
 </script>
 

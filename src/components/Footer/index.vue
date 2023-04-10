@@ -1,9 +1,9 @@
 <script setup>
-import Center from "@/components/Center/index.vue";
-import WeChat1 from "@/assets/image/footer/WeChat1.png";
-import WeChat2 from "@/assets/image/footer/WeChat2.png";
-import Logo from "@/assets/image/footer/logo.png";
-import Arrow from "@/assets/image/footer/arrow.png";
+import Center from "../../components/Center/index.vue";
+import WeChat1 from "../../assets/image/footer/weChat1.png";
+import WeChat2 from "../../assets/image/footer/weChat2.png";
+import Logo from "../../assets/image/footer/logo.png";
+import Arrow from "../../assets/image/footer/arrow.png";
 </script>
 
 <template>

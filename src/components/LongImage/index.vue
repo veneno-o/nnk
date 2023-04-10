@@ -44,8 +44,8 @@
 import { ref, onMounted } from "vue";
 import TransformContainer from "../TransitionContainer/index.vue";
 
-import LongImage1 from "@/assets/image/LongImage/LongImage1.png";
-import LongImage2 from "@/assets/image/LongImage/LongImage2.png";
+import LongImage1 from "../../assets/image/longImage/longImage1.png";
+import LongImage2 from "../../assets/image/longImage/longImage2.png";
 
 const { docWidthRef } = defineProps(["docWidthRef"]);
 
