@@ -20,9 +20,8 @@
         </TransitionContainer>
         <TransitionContainer :index="index">
             <p class="sub-title">
-                {{ subTitleList[0] }}
-                <br>
-                {{ subTitleList[1] }}
+                {{ subTitleList }}
+                <!-- {{ subTitleList[1] }} -->
             </p>
         </TransitionContainer>
         </div>
